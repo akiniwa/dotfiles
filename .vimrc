@@ -12,6 +12,7 @@ set showmode "モード表示する
 set title "編集中のファイル名を表示する
 set ruler "ルーラーの表示する
 set tabstop=4 "タブ文字数を4にする
+set cursorline
 highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=darkgray
 match ZenkakuSpace /　/" 全角スペースの表示
 let g:neocomplcache_enable_at_startup = 1
@@ -34,14 +35,15 @@ Bundle 'gmarik/vundle'
 		Bundle "Shougo/unite.vim"
 		Bundle "h1mesuke/unite-outline"
 		Bundle "Rip-Rip/clang_complete"
+		Bundle "tpope/vim-vividchalk"
 	
 " vim-scripts プラグイン
 		Bundle "SingleCompile"
 		Bundle "opsplorer"
-
 
 " github にないプラグイン
 
 " ファイル形式検出、プラグイン、インデントを ON
 filetype plugin indent on 
 
+colorscheme vividchalk
