@@ -24,7 +24,7 @@ filetype off
 
 " Vundle を初期化して
 " Vundle 自身も Vundle で管理
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/vundle.git/
 call vundle#rc()
 Bundle 'gmarik/vundle'
 
