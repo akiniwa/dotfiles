@@ -40,6 +40,7 @@ Bundle "tpope/vim-vividchalk"
 " vim-scripts プラグイン
 Bundle "SingleCompile"
 Bundle "opsplorer"
+Bundle "c.vim"
 
 " github にないプラグイン
 
@@ -49,3 +50,15 @@ filetype plugin indent on
 colorscheme vividchalk
 map! <C-G> <Esc>
 map <C-G> <Esc>
+map <CR> i<CR><Esc>
+map <C-K> <Esc>v<S-$>x<Esc>
+
+function! ChangeColor(index)
+		if a:index==0
+				colorscheme desert
+		elseif a:index==1
+				colorscheme vividchalk
+		else 
+				colorscheme default
+		endif
+endfunction
