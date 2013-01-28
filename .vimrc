@@ -1,8 +1,7 @@
 syntax on "シンタックスハイライトを有効にする
 "set nobackup "バックアップファイルを作らない設定にする
 set encoding=utf-8 "デフォルトの文字コード
-"set fileencodings=iso-2022-jp,euc-jp,utf-8,ucs-2,cp932,sjis "自動判別に使用する文字コード 
-set fileencodings=ucs-bom,iso-2022-jp-3,iso-2022-jp,eucjp-ms,euc-jisx0213,euc-jp,sjis,cp932,utf-8
+set fileencodings=iso-2022-jp,euc-jp,utf-8,ucs-2,cp932,sjis "自動判別に使用する文字コード 
 set autoindent "オートインデントする
 set number "行番号を表示する
 set incsearch "インクリメンタルサーチ
@@ -34,7 +33,7 @@ Bundle "Shougo/neobundle.vim.git"
 Bundle "jceb/vim-hier"
 Bundle "Shougo/unite.vim"
 Bundle "h1mesuke/unite-outline"
-Bundle "Rip-Rip/clang_complete"
+"Bundle "Rip-Rip/clang_complete"
 Bundle "tpope/vim-vividchalk"
 
 " vim-scripts プラグイン
