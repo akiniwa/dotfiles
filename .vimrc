@@ -12,6 +12,7 @@ set title "編集中のファイル名を表示する
 set ruler "ルーラーの表示する
 set tabstop=4 "タブ文字数を4にする
 set cursorline
+let g:BASH_Ctrl_j = 'off'
 highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=darkgray
 match ZenkakuSpace /　/" 全角スペースの表示
 let g:neocomplcache_enable_at_startup = 1
@@ -50,7 +51,6 @@ colorscheme vividchalk
 map! <C-G> <Esc>
 map <C-G> <Esc>
 map <CR> i<CR><Esc>
-map <C-K> <Esc>v<S-$>x<Esc>
 
 function! ChangeColor(index)
 		if a:index==0
@@ -61,3 +61,10 @@ function! ChangeColor(index)
 				colorscheme default
 		endif
 endfunction
+map <F1> :call ChangeColor(0)<Enter>
+map <F2> :call ChangeColor(1)<Enter>
+map <F3> :call ChangeColor(2)<Enter>
+map <C-H> 8h
+map <C-N> 8j
+map <C-K> 8k
+map <C-L> 8l
