@@ -65,6 +65,6 @@ map <F1> :call ChangeColor(0)<Enter>
 map <F2> :call ChangeColor(1)<Enter>
 map <F3> :call ChangeColor(2)<Enter>
 map <C-H> 8h
-map <C-J> 8j
+map <C-J> 8<Down> 
 map <C-K> 8k
 map <C-L> 8l
