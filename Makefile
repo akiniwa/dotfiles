@@ -1,3 +1,4 @@
+
 DOT_FILES = .emacs .vimrc .vim .emacs.d
 
 all: emacs vim 
