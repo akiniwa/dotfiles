@@ -10,12 +10,15 @@ set showmatch "対応する括弧のハイライト表示する
 set showmode "モード表示する
 set title "編集中のファイル名を表示する
 set ruler "ルーラーの表示する
-set tabstop=4 "タブ文字数を4にする
+set tabstop=4
+set expandtab
+set shiftwidth=4
 set cursorline
 let g:BASH_Ctrl_j = 'off'
 highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=darkgray
 match ZenkakuSpace /　/" 全角スペースの表示
 let g:neocomplcache_enable_at_startup = 1
+let g:BASH_Ctrl_j = 'off'
 
 " vi との互換性OFF
 set nocompatible
@@ -40,7 +43,7 @@ Bundle "tpope/vim-vividchalk"
 " vim-scripts プラグイン
 Bundle "SingleCompile"
 Bundle "opsplorer"
-Bundle "c.vim"
+"Bundle "c.vim"
 
 " github にないプラグイン
 
@@ -64,7 +67,9 @@ endfunction
 map <F1> :call ChangeColor(0)<Enter>
 map <F2> :call ChangeColor(1)<Enter>
 map <F3> :call ChangeColor(2)<Enter>
-map <C-H> 8h
-map <C-J> 8<Down> 
-map <C-K> 8k
-map <C-L> 8l
+noremap <C-H> 8h
+noremap <C-J> 8j
+noremap <C-K> 8k
+noremap <C-L> 8l
+
+source ~/.vimrc.unite
