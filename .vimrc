@@ -37,8 +37,10 @@ Bundle "Shougo/neobundle.vim.git"
 Bundle "jceb/vim-hier"
 Bundle "Shougo/unite.vim"
 Bundle "h1mesuke/unite-outline"
+Bundle "thinca/vim-quickrun.git"
 "Bundle "Rip-Rip/clang_complete"
-Bundle "tpope/vim-vividchalk"
+"Bundle "tpope/vim-vividchalk"
+Bundle "flazz/vim-colorschemes.git"
 
 " vim-scripts プラグイン
 Bundle "SingleCompile"
@@ -50,23 +52,44 @@ Bundle "opsplorer"
 " ファイル形式検出、プラグイン、インデントを ON
 filetype plugin indent on 
 
-colorscheme vividchalk
+colorscheme inkpot
 map! <C-G> <Esc>
 map <C-G> <Esc>
 map <CR> i<CR><Esc>
 
 function! ChangeColor(index)
-		if a:index==0
-				colorscheme desert
-		elseif a:index==1
-				colorscheme vividchalk
-		else 
-				colorscheme default
-		endif
+    if a:index==0
+        colorscheme desert
+    elseif a:index==1
+        colorscheme inkpot 
+    elseif a:index==2 
+        colorscheme desert256
+    elseif a:index==3
+        colorscheme dante
+    elseif a:index==4
+        colorscheme MountainDew
+    elseif a:index==5
+        colorscheme DevC++
+    elseif a:index==6
+        colorscheme coffee
+    elseif a:index==7
+        colorscheme jellybeans
+    elseif a:index==8
+        colorscheme slate
+    else
+    endif
 endfunction
+
 map <F1> :call ChangeColor(0)<Enter>
 map <F2> :call ChangeColor(1)<Enter>
 map <F3> :call ChangeColor(2)<Enter>
+map <F4> :call ChangeColor(3)<Enter>
+map <F5> :call ChangeColor(4)<Enter>
+map <F6> :call ChangeColor(5)<Enter>
+map <F7> :call ChangeColor(6)<Enter>
+map <F8> :call ChangeColor(7)<Enter>
+map <F9> :call ChangeColor(8)<Enter>
+
 noremap <C-H> 8h
 noremap <C-J> 8j
 noremap <C-K> 8k
