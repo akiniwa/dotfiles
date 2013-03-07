@@ -95,4 +95,4 @@ noremap <C-J> 8j
 noremap <C-K> 8k
 noremap <C-L> 8l
 
-source ~/.vimrc.unite
+source ~/dotfiles/.vimrc.unite
