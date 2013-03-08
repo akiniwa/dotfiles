@@ -15,9 +15,17 @@
 ;; default で load-path が通っている場合は必要ありません
 ;(setq load-path
 				;      (cons (expand-file-name
-								;	     "/Applications/Emacs.app/Contents/Resources/site-lisp/yatex") load-path))
+;	     "/Applications/Emacs.app/Contents/Resources/site-lisp/yatex") load-path))
 ;; 文章作成時の漢字コードの設定
 ;; 1 = Shift_JIS, 2 = ISO-2022-JP, 3 = EUC-JP, 4 = UTF-8
 ;; default は 2
 (setq YaTeX-kanji-code 4) ; euc-jp
+
+
+(add-to-list 'load-path "PATH_TO_WHERE_YOU_UNPACKED_ORGMODE ~/dotfiles/.emacs.d/org-mode")
+  (require 'org)
+  (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
+  (define-key global-map "\C-cl" 'org-store-link)
+  (define-key global-map "\C-ca" 'org-agenda)
+  (setq org-log-done t)
 
