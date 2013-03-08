@@ -1,4 +1,4 @@
-DOT_FILES = .emacs .vimrc .vim .emacs.d .gitconfig
+DOT_FILES = .emacs .vimrc .vim .vimrc.unite .emacs.d .gitconfig
 
 all: emacs vim git
 
