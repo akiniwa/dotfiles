@@ -80,6 +80,7 @@ function! ChangeColor(index)
     endif
 endfunction
 
+
 map <F1> :call ChangeColor(0)<Enter>
 map <F2> :call ChangeColor(1)<Enter>
 map <F3> :call ChangeColor(2)<Enter>
