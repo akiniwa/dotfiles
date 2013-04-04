@@ -53,8 +53,6 @@ Bundle "opsplorer"
 filetype plugin indent on 
 
 colorscheme inkpot
-map! <C-G> <Esc>
-map <C-G> <Esc>
 map <CR> i<CR><Esc>
 
 function! ChangeColor(index)
@@ -80,6 +78,7 @@ function! ChangeColor(index)
     endif
 endfunction
 
+
 map <F1> :call ChangeColor(0)<Enter>
 map <F2> :call ChangeColor(1)<Enter>
 map <F3> :call ChangeColor(2)<Enter>
@@ -94,5 +93,7 @@ noremap <C-H> 8h
 noremap <C-J> 8j
 noremap <C-K> 8k
 noremap <C-L> 8l
+
+noremap <C-]> :tabn<CR>
 
 source ~/dotfiles/.vimrc.unite
