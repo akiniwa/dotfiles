@@ -82,14 +82,11 @@ function! ChangeColor(index)
     endif
 endfunction
 
-<<<<<<< HEAD
 function! SetPython()
     autocmd FileType python setl autoindent
     autocmd FileType python setl smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
     autocmd FileType python setl tabstop=8 expandtab shiftwidth=4 softtabstop=4
 endfunction
-=======
->>>>>>> c13f19e79ad5a502c9712ade22bcc37f5dd48bc2
 
 map <F1> :call ChangeColor(0)<Enter>
 map <F2> :call ChangeColor(1)<Enter>
