@@ -79,20 +79,25 @@ function! ChangeColor(index)
 endfunction
 
 
-map <F1> :call ChangeColor(0)<Enter>
-map <F2> :call ChangeColor(1)<Enter>
-map <F3> :call ChangeColor(2)<Enter>
-map <F4> :call ChangeColor(3)<Enter>
-map <F5> :call ChangeColor(4)<Enter>
-map <F6> :call ChangeColor(5)<Enter>
-map <F7> :call ChangeColor(6)<Enter>
-map <F8> :call ChangeColor(7)<Enter>
-map <F9> :call ChangeColor(8)<Enter>
+noremap <F1> :call ChangeColor(0)<Enter>
+noremap <F2> :call ChangeColor(1)<Enter>
+noremap <F3> :call ChangeColor(2)<Enter>
+noremap <F4> :call ChangeColor(3)<Enter>
+noremap <F5> :call ChangeColor(4)<Enter>
+noremap <F6> :call ChangeColor(5)<Enter>
+noremap <F7> :call ChangeColor(6)<Enter>
+noremap <F8> :call ChangeColor(7)<Enter>
+noremap <F9> :call ChangeColor(8)<Enter>
 
 noremap <C-H> 8h
 noremap <C-J> 8j
 noremap <C-K> 8k
 noremap <C-L> 8l
+
+nnoremap <Right> <Nop>
+nnoremap <Left> <Nop>
+nnoremap <Up> <Nop>
+nnoremap <Down> <Nop>
 
 noremap <C-]> :tabn<CR>
 
