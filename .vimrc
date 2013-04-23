@@ -19,6 +19,7 @@ highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=darkgray
 match ZenkakuSpace /　/" 全角スペースの表示
 let g:neocomplcache_enable_at_startup = 1
 let g:BASH_Ctrl_j = 'off'
+let g:pep8_map='<C-A>'
 
 " vi との互換性OFF
 set nocompatible
@@ -41,6 +42,9 @@ Bundle "thinca/vim-quickrun.git"
 "Bundle "Rip-Rip/clang_complete"
 "Bundle "tpope/vim-vividchalk"
 Bundle "flazz/vim-colorschemes.git"
+"Bundle "cburroughs/pep8.py.git"
+Bundle "mattboehm/vim-accordion.git"
+Bundle "tomtom/tcomment_vim.git"
 
 " vim-scripts プラグイン
 Bundle "SingleCompile"
@@ -78,6 +82,11 @@ function! ChangeColor(index)
     endif
 endfunction
 
+function! SetPython()
+    autocmd FileType python setl autoindent
+    autocmd FileType python setl smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
+    autocmd FileType python setl tabstop=8 expandtab shiftwidth=4 softtabstop=4
+endfunction
 
 noremap <F1> :call ChangeColor(0)<Enter>
 noremap <F2> :call ChangeColor(1)<Enter>
