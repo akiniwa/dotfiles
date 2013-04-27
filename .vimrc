@@ -21,6 +21,14 @@ let g:neocomplcache_enable_at_startup = 1
 let g:BASH_Ctrl_j = 'off'
 let g:pep8_map='<C-A>'
 
+" Sage settings (from Franco Saliola)
+autocmd BufRead,BufNewFile *.sage,*.pyx,*.spyx set filetype=python
+autocmd Filetype python set tabstop=4|set shiftwidth=4|set expandtab
+autocmd FileType python set makeprg=sage\ -b\ &&\ sage\ -t\ %
+
+" Rのプラグイン用
+"let vimrplugin_screenplugin = 0
+
 " vi との互換性OFF
 set nocompatible
 " ファイル形式の検出を無効にする
@@ -44,11 +52,14 @@ Bundle "thinca/vim-quickrun.git"
 Bundle "flazz/vim-colorschemes.git"
 "Bundle "cburroughs/pep8.py.git"
 Bundle "mattboehm/vim-accordion.git"
+Bundle "triglav/vim-visual-increment.git"
 Bundle "tomtom/tcomment_vim.git"
+Bundle "ervandew/screen.git"
 
 " vim-scripts プラグイン
 Bundle "SingleCompile"
 Bundle "opsplorer"
+Bundle "Vim-R-plugin"
 "Bundle "c.vim"
 
 " github にないプラグイン
@@ -80,6 +91,10 @@ function! ChangeColor(index)
         colorscheme slate
     else
     endif
+endfunction
+
+function! Increment(num)
+    :%s/[0-9]\+/\=submatch(0)+ a:num/g
 endfunction
 
 function! SetPython()
