@@ -44,6 +44,7 @@ Bundle "thinca/vim-quickrun.git"
 Bundle "flazz/vim-colorschemes.git"
 "Bundle "cburroughs/pep8.py.git"
 Bundle "mattboehm/vim-accordion.git"
+Bundle "triglav/vim-visual-increment.git"
 Bundle "tomtom/tcomment_vim.git"
 
 " vim-scripts プラグイン
