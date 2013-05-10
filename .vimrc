@@ -45,10 +45,19 @@ Bundle "flazz/vim-colorschemes.git"
 "Bundle "cburroughs/pep8.py.git"
 Bundle "mattboehm/vim-accordion.git"
 Bundle "tomtom/tcomment_vim.git"
+Bundle "mbbill/undotree"
+Bundle "troydm/easybuffer.vim"
+"Bundle "vim-scripts/DirDo.vim"
+"Bundle "AndrewRadev/switch.vim"
+"Bundle "triglav/vim-visual-increment.git"
+
 
 " vim-scripts プラグイン
 Bundle "SingleCompile"
 Bundle "opsplorer"
+"Bundle "speeddating.vim"
+
+"Bundle "YankRing.vim"
 "Bundle "c.vim"
 
 " github にないプラグイン
