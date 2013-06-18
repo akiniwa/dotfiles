@@ -54,12 +54,27 @@ Bundle "flazz/vim-colorschemes.git"
 Bundle "mattboehm/vim-accordion.git"
 Bundle "triglav/vim-visual-increment.git"
 Bundle "tomtom/tcomment_vim.git"
+<<<<<<< HEAD
 Bundle "ervandew/screen.git"
+=======
+Bundle "mbbill/undotree"
+Bundle "troydm/easybuffer.vim"
+"Bundle "vim-scripts/DirDo.vim"
+"Bundle "AndrewRadev/switch.vim"
+"Bundle "triglav/vim-visual-increment.git"
+
+>>>>>>> 20dc1f53a1f9f146866e3172949f301177459634
 
 " vim-scripts プラグイン
 Bundle "SingleCompile"
 Bundle "opsplorer"
+<<<<<<< HEAD
 Bundle "Vim-R-plugin"
+=======
+"Bundle "speeddating.vim"
+
+"Bundle "YankRing.vim"
+>>>>>>> 20dc1f53a1f9f146866e3172949f301177459634
 "Bundle "c.vim"
 
 " github にないプラグイン
