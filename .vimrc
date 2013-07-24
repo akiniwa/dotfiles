@@ -27,7 +27,10 @@ autocmd Filetype python set tabstop=4|set shiftwidth=4|set expandtab
 autocmd FileType python set makeprg=sage\ -b\ &&\ sage\ -t\ %
 
 " Rのプラグイン用
-"let vimrplugin_screenplugin = 0
+let vimrplugin_screenplugin = 1
+let g:ScreenImpl = 'Tmux'
+let vimrplugin_conquevsplit = 1
+let vimrplugin_vimpager = "vertical"
 
 " vi との互換性OFF
 set nocompatible
@@ -54,27 +57,21 @@ Bundle "flazz/vim-colorschemes.git"
 Bundle "mattboehm/vim-accordion.git"
 Bundle "triglav/vim-visual-increment.git"
 Bundle "tomtom/tcomment_vim.git"
-<<<<<<< HEAD
 Bundle "ervandew/screen.git"
-=======
 Bundle "mbbill/undotree"
 Bundle "troydm/easybuffer.vim"
 "Bundle "vim-scripts/DirDo.vim"
 "Bundle "AndrewRadev/switch.vim"
 "Bundle "triglav/vim-visual-increment.git"
 
->>>>>>> 20dc1f53a1f9f146866e3172949f301177459634
 
 " vim-scripts プラグイン
 Bundle "SingleCompile"
 Bundle "opsplorer"
-<<<<<<< HEAD
 Bundle "Vim-R-plugin"
-=======
 "Bundle "speeddating.vim"
 
 "Bundle "YankRing.vim"
->>>>>>> 20dc1f53a1f9f146866e3172949f301177459634
 "Bundle "c.vim"
 
 " github にないプラグイン
@@ -97,7 +94,7 @@ function! ChangeColor(index)
     elseif a:index==4
         colorscheme MountainDew
     elseif a:index==5
-        colorscheme DevC++
+        colorscheme southernlights
     elseif a:index==6
         colorscheme coffee
     elseif a:index==7
