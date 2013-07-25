@@ -79,7 +79,7 @@ Bundle "Vim-R-plugin"
 " ファイル形式検出、プラグイン、インデントを ON
 filetype plugin indent on 
 
-colorscheme inkpot
+colorscheme dante
 map <CR> i<CR><Esc>
 
 function! ChangeColor(index)
