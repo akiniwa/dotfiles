@@ -79,14 +79,14 @@ Bundle "Vim-R-plugin"
 " ファイル形式検出、プラグイン、インデントを ON
 filetype plugin indent on 
 
-colorscheme desert
+colorscheme inkpot
 map <CR> i<CR><Esc>
 
 function! ChangeColor(index)
     if a:index==0
         colorscheme desert
     elseif a:index==1
-        colorscheme 3dglasses 
+        colorscheme inkpot 
     elseif a:index==2 
         colorscheme desert256
     elseif a:index==3
