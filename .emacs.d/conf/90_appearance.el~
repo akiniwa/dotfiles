@@ -1,0 +1,25 @@
+;; タイトルをフルパス
+(setq frame-title-format(format "%%f - Emacs@%s" (system-name)))
+
+;; 行数列数表示
+(column-number-mode t)
+(line-number-mode t)
+
+;; 対応する括弧ハイライト
+(show-paren-mode 1)
+;;(setq show-paren-style 'mixed)
+
+;; findfile時意味のないパスをグレーに
+(file-name-shadow-mode t)
+
+;; 画像ファイル
+(auto-image-file-mode t)
+
+;; ツールバーメニューバー非表示
+(tool-bar-mode -1)
+(menu-bar-mode -1)
+
+[13/05/26 16:43:44] kho-sk: ;; 透過度
+(set-frame-parameter (selected-frame) 'alpha '(78 60))
+[13/05/26 16:43:51] kho-sk: ;; 分割時に文字の折り返し
+(setq truncate-partial-width-windows t)

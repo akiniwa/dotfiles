@@ -1,4 +1,5 @@
 (global-set-key "\C-h" 'delete-backward-char)
+
 (setq auto-mode-alist 
  (cons (cons "\\.tex$" 'yatex-mode) auto-mode-alist))
 (autoload 'yatex-mode "yatex" "Yet Another LaTeX mode" t)
@@ -21,11 +22,9 @@
 ;; default は 2
 (setq YaTeX-kanji-code 4) ; euc-jp
 
-
 (add-to-list 'load-path "PATH_TO_WHERE_YOU_UNPACKED_ORGMODE ~/dotfiles/.emacs.d/org-mode")
   (require 'org)
   (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
   (define-key global-map "\C-cl" 'org-store-link)
   (define-key global-map "\C-ca" 'org-agenda)
   (setq org-log-done t)
-

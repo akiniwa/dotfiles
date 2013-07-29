@@ -27,7 +27,10 @@ autocmd Filetype python set tabstop=4|set shiftwidth=4|set expandtab
 autocmd FileType python set makeprg=sage\ -b\ &&\ sage\ -t\ %
 
 " Rのプラグイン用
-"let vimrplugin_screenplugin = 0
+let vimrplugin_screenplugin = 1
+let g:ScreenImpl = 'Tmux'
+let vimrplugin_conquevsplit = 1
+let vimrplugin_vimpager = "vertical"
 
 " vi との互換性OFF
 set nocompatible
@@ -76,7 +79,7 @@ Bundle "Vim-R-plugin"
 " ファイル形式検出、プラグイン、インデントを ON
 filetype plugin indent on 
 
-colorscheme inkpot
+colorscheme dante
 map <CR> i<CR><Esc>
 
 function! ChangeColor(index)
@@ -91,7 +94,7 @@ function! ChangeColor(index)
     elseif a:index==4
         colorscheme MountainDew
     elseif a:index==5
-        colorscheme DevC++
+        colorscheme southernlights
     elseif a:index==6
         colorscheme coffee
     elseif a:index==7
