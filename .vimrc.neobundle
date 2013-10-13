@@ -1,0 +1,45 @@
+" vi との互換性OFF
+set nocompatible
+" ファイル形式の検出を無効にする
+filetype off
+
+" Vundle を初期化して
+" Vundle 自身も Vundle で管理
+set rtp+=~/.vim/bundle/vundle.git/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+
+" github にあるプラグイン
+Bundle "Shougo/neocomplcache.git"
+Bundle "Shougo/neobundle.vim.git"
+Bundle "jceb/vim-hier"
+Bundle "Shougo/unite.vim"
+Bundle "h1mesuke/unite-outline"
+Bundle "thinca/vim-quickrun.git"
+"Bundle "Rip-Rip/clang_complete"
+"Bundle "tpope/vim-vividchalk"
+Bundle "flazz/vim-colorschemes.git"
+"Bundle "cburroughs/pep8.py.git"
+Bundle "mattboehm/vim-accordion.git"
+Bundle "triglav/vim-visual-increment.git"
+Bundle "tomtom/tcomment_vim.git"
+
+Bundle "ervandew/screen.git"
+
+Bundle "mbbill/undotree"
+Bundle "troydm/easybuffer.vim"
+"Bundle "vim-scripts/DirDo.vim"
+"Bundle "AndrewRadev/switch.vim"
+"Bundle "triglav/vim-visual-increment.git"
+
+
+" vim-scripts プラグイン
+Bundle "SingleCompile"
+Bundle "opsplorer"
+Bundle "Vim-R-plugin"
+"Bundle "speeddating.vim"
+
+"Bundle "YankRing.vim"
+"Bundle "c.vim"
+
+
