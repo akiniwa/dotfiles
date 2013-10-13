@@ -16,3 +16,5 @@
 	editor = /usr/bin/vim
 [push]
 	default = matching
+[github]
+	user = akiniwa
