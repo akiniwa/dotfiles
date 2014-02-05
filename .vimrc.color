@@ -1,0 +1,33 @@
+function! ChangeColor(index)
+    if a:index==0
+        colorscheme desert
+    elseif a:index==1
+        colorscheme inkpot 
+    elseif a:index==2 
+        colorscheme desert256
+    elseif a:index==3
+        colorscheme dante
+    elseif a:index==4
+        colorscheme MountainDew
+    elseif a:index==5
+        colorscheme DevC++
+    elseif a:index==6
+        colorscheme coffee
+    elseif a:index==7
+        colorscheme jellybeans
+    elseif a:index==8
+        colorscheme slate
+    else
+    endif
+endfunction
+
+noremap <F1> :call ChangeColor(0)<Enter>
+noremap <F2> :call ChangeColor(1)<Enter>
+noremap <F3> :call ChangeColor(2)<Enter>
+noremap <F4> :call ChangeColor(3)<Enter>
+noremap <F5> :call ChangeColor(4)<Enter>
+noremap <F6> :call ChangeColor(5)<Enter>
+noremap <F7> :call ChangeColor(6)<Enter>
+noremap <F8> :call ChangeColor(7)<Enter>
+noremap <F9> :call ChangeColor(8)<Enter>
+

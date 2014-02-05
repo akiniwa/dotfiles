@@ -1,0 +1,12 @@
+noremap <C-H> 8h
+noremap <C-J> 8j
+noremap <C-K> 8k
+noremap <C-L> 8l
+
+nnoremap <Right> <Nop>
+nnoremap <Left> <Nop>
+nnoremap <Up> <Nop>
+nnoremap <Down> <Nop>
+
+noremap <C-]> :tabn<CR>
+
