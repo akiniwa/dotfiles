@@ -4,8 +4,8 @@
 [color]
 	ui = auto
 [alias]
-	co = checkout
-	cm = commit
+	ch = checkout
+	co = commit
 	st = status
 	br = branch
 	hist = log --pretty=format:\\\"%h %ad | %s%d [%an]\\\" --graph --date=short
@@ -16,4 +16,3 @@
 	editor = /usr/bin/vim
 [push]
 	default = matching
-
