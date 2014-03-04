@@ -31,8 +31,12 @@ Bundle "troydm/easybuffer.vim"
 "Bundle "vim-scripts/DirDo.vim"
 "Bundle "AndrewRadev/switch.vim"
 "Bundle "triglav/vim-visual-increment.git"
+<<<<<<< HEAD
 Bundle "mattn/gist-vim"
 Bundle "mattn/webapi-vim"
+=======
+
+>>>>>>> origin/master
 
 " vim-scripts プラグイン
 Bundle "SingleCompile"
