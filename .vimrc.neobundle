@@ -31,11 +31,8 @@ Bundle "troydm/easybuffer.vim"
 "Bundle "vim-scripts/DirDo.vim"
 "Bundle "AndrewRadev/switch.vim"
 "Bundle "triglav/vim-visual-increment.git"
-<<<<<<< HEAD
 Bundle "mattn/gist-vim"
 Bundle "mattn/webapi-vim"
-=======
->>>>>>> 71e704e7595b23454a648e75d30bda055516c93f
 
 
 " vim-scripts プラグイン
