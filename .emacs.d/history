@@ -3,6 +3,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 (setq savehist-minibuffer-history-variables '(buffer-name-history read-expression-history YaTeX-preview-file-history YaTeX-preview-command-history ess--completing-hist extended-command-history minibuffer-history))
 (setq buffer-name-history '("kim_01.R"))
 (setq read-expression-history '("w"))
@@ -14,6 +15,8 @@
 >>>>>>> origin/master
 =======
 >>>>>>> d739ff0
+=======
+>>>>>>> d739ff0eb0f6d03a6119a5b82c5e4aac50fe2728
 (setq savehist-minibuffer-history-variables '(read-expression-history YaTeX-preview-file-history YaTeX-preview-command-history ess--completing-hist extended-command-history minibuffer-history))
 (setq read-expression-history '("w"))
 (setq YaTeX-preview-file-history '("sample.pdf"))
