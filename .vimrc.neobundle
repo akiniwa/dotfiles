@@ -11,6 +11,7 @@ Bundle 'gmarik/vundle'
 
 " github にあるプラグイン
 Bundle "Shougo/neocomplcache.git"
+"Bundle "Shougo/neosnippet"
 Bundle "Shougo/neobundle.vim.git"
 Bundle "jceb/vim-hier"
 Bundle "Shougo/unite.vim"
@@ -23,6 +24,7 @@ Bundle "flazz/vim-colorschemes.git"
 Bundle "mattboehm/vim-accordion.git"
 Bundle "triglav/vim-visual-increment.git"
 Bundle "tomtom/tcomment_vim.git"
+Bundle "tpope/vim-pathogen"
 
 Bundle "ervandew/screen.git"
 
@@ -33,7 +35,7 @@ Bundle "troydm/easybuffer.vim"
 "Bundle "triglav/vim-visual-increment.git"
 Bundle "mattn/gist-vim"
 Bundle "mattn/webapi-vim"
-
+Bundle "digitaltoad/vim-jade"
 
 " vim-scripts プラグイン
 Bundle "SingleCompile"

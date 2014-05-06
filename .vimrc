@@ -1,5 +1,6 @@
 syntax on "シンタックスハイライトを有効にする
 "set nobackup "バックアップファイルを作らない設定にする
+
 set encoding=utf-8 "デフォルトの文字コード
 set fileencodings=iso-2022-jp,euc-jp,utf-8,ucs-2,cp932,sjis "自動判別に使用する文字コード 
 set autoindent "オートインデントする
@@ -25,6 +26,10 @@ let g:pep8_map='<C-A>'
 autocmd BufRead,BufNewFile *.sage,*.pyx,*.spyx set filetype=python
 autocmd Filetype python set tabstop=4|set shiftwidth=4|set expandtab
 autocmd FileType python set makeprg=sage\ -b\ &&\ sage\ -t\ %
+" Set jade
+autocmd BufRead,BufNewFile *.jade set filetype=jade
+autocmd Filetype jade set tabstop=2|set shiftwidth=2|set expandtab
+
 
 " Rのプラグイン用
 let vimrplugin_screenplugin = 1
@@ -56,3 +61,5 @@ endfunction
 source ~/dotfiles/.vimrc.unite
 source ~/dotfiles/.vimrc.color
 source ~/dotfiles/.vimrc.keybinding
+
+
